@@ -1,0 +1,2 @@
+C:\Stash\DayOff\DayOff\bin\Debug\DayOff.exe.config
+C:\Repo\DayOff\DayOff\bin\Debug\DayOff.exe.config
