@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DayOff.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +20,18 @@ namespace DayOff
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainViewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
+
+            viewModel = new MainViewModel();
+            this.DataContext = viewModel;
+        }
+
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            this.viewModel.Launch();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace DayOff.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://api.mongolab.com/api/1/databases/ppt_data/collections/info_test")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://api.mongolab.com/api/1/databases/ppt_data/collections/days_dev")]
         public string url {
             get {
                 return ((string)(this["url"]));

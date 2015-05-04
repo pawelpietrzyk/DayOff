@@ -1,8 +1,14 @@
 ﻿<Window x:Class="DayOff.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        Title="DayOff" Height="450" Width="350" Loaded="Window_Loaded_1">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Row="0" Content="{Binding Content, Mode=TwoWay}" Focusable="False">
+        </ContentControl>
+        <TextBlock Grid.Row="1" Text="{Binding Message}" Focusable="False"/>
     </Grid>
 </Window>
